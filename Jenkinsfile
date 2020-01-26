@@ -2,20 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('CI') {
             steps {
-                echo 'Building..'
+                echo 'Continuous Integration..'
             }
         }
-        stage('Test') {
+        stage('CD') {
             steps {
-                echo 'Testing..'
+                echo 'Continuous Deployment..'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        
     }
 }
