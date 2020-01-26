@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('CI') {
+        stage('Sprint3CI') {
             steps {
                 echo 'Continuous Integration..'
             }
         }
-        stage('CD') {
+        stage('Sprint3CD') {
             steps {
                 echo 'Continuous Deployment..'
             }
