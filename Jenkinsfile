@@ -70,7 +70,7 @@ pipeline {
 
                 script {
 
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'VASUDHA-DEVOPS') {
 
                             myapp.push("${env.BUILD_ID}")
 
