@@ -4,7 +4,7 @@ pipeline {
 
 	environment {
 
-		PROJECT_ID = 'VASUDHA-DEVOPS'
+		PROJECT_ID = 'vasudha-devops'
 
 		CLUSTER_NAME = 'sprint6-kube-demo'
 
