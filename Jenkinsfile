@@ -70,7 +70,7 @@ pipeline {
 
                 script {
 
-                    docker.withRegistry('https://registry.hub.docker.com', 'narayvas') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker') {
 
                             myapp.push("${env.BUILD_ID}")
 
