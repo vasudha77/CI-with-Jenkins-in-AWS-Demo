@@ -10,7 +10,7 @@ pipeline {
 
 		LOCATION = 'us-central1-c'
 
-		CREDENTIALS_ID = 'VASUDHA-DEVOPS'
+		CREDENTIALS_ID = 'vasudha-devops'
 
 	}
 
