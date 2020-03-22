@@ -56,7 +56,7 @@ pipeline {
 
                 script {
 
-                    myapp = docker.build("gcr.io/vasudha-devops/k8srepo:${env.BUILD_ID}")
+                    myapp = docker.build("gcr.io/vasudha-devops/narayvas:${env.BUILD_ID}")
 
                 }
 
