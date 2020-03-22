@@ -56,7 +56,7 @@ pipeline {
 
                 script {
 
-                    myapp = docker.build("gcr.io/vasudha-devops/narayvas:${env.BUILD_ID}")
+                    myapp = docker.build("gcr.io/vasudha-devops/myapp4k8s:${env.BUILD_ID}")
 
                 }
 
@@ -70,7 +70,7 @@ pipeline {
 
                 script {
 
-                    docker.withRegistry('https://gcr.io', 'gcr:gcrjenkins') {
+                    docker.withRegistry('https://gcr.io/vasudha-devops', 'gcr:gcrjenkins') {
 
                             myapp.push("${env.BUILD_ID}")
 
