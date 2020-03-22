@@ -70,7 +70,7 @@ pipeline {
 
                 script {
 
-                    docker.withRegistry('https://gcr.io/vasudha-devops', 'gcrjenkins') {
+                    docker.withRegistry('https://gcr.io/', 'gcr:vasudha-devops') {
 
                             myapp.push("${env.BUILD_ID}")
 
