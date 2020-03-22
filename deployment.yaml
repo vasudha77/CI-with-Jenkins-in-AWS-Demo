@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: gcr.io/vasudha-devops/narayvas:tagversion
+        image: gcr.io/vasudha-devops/myapp4k8s:tagversion
         ports:
         - containerPort: 8080
 ---
